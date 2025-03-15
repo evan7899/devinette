@@ -35,18 +35,8 @@ Pour une expérience alternative dans le navigateur, tapez `console run` dans la
 Vous pouvez également jouer au jeu directement depuis votre terminal local en suivant ces étapes :
 
 1. Assurez-vous d'avoir Node.js installé sur votre machine
-2. Clonez ce dépôt : `git clone [URL_DU_REPO]`
 3. Installez les dépendances : `npm install` ou `yarn install`
 4. Lancez le jeu en mode console : `npm run console` ou `yarn console`
-
-Pour le mode console local, vous aurez besoin d'ajouter le script suivant dans votre package.json :
-```json
-"scripts": {
-  "console": "node ./scripts/console-game.js"
-}
-```
-
-Et créer un fichier simple `./scripts/console-game.js` qui lance une version Node.js du jeu.
 
 ## Diagramme UML des Classes
 
