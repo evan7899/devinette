@@ -1,11 +1,10 @@
-
 import { getScores, Score } from './scoreManager';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 
 // Rules content for export
 const rulesContent = {
-  title: "DevineLe Challenge - Règles du Jeu",
+  title: "Règles du Jeu",
   introduction: "Un jeu de devinette de nombre simple et amusant",
   rules: [
     "Objectif: Deviner un nombre entre 1 et 100",
@@ -88,7 +87,7 @@ export const exportScoresToPDF = () => {
   
   // Add title
   doc.setFontSize(20);
-  doc.text("DevineLe Challenge - Tableau des Scores", 20, 20);
+  doc.text("Tableau des Scores", 20, 20);
   
   // Format date function
   const formatDate = (dateString: string) => {
@@ -152,7 +151,7 @@ export const generateLaTeXRules = () => {
 \\usepackage{hyperref}
 \\usepackage{xcolor}
 
-\\title{DevineLe Challenge - Documentation du Jeu}
+\\title{Documentation du Jeu}
 \\author{Projet Paradigmes de Programmation}
 \\date{\\today}
 

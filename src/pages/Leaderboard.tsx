@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -49,8 +48,6 @@ const Leaderboard = () => {
       <header className="w-full py-4 px-6 border-b glass">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-foreground">DevineLe</h1>
-            <span className="inline-flex items-center rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary">Challenge</span>
           </div>
           <nav className="flex items-center space-x-4">
             <Button variant="ghost" size="sm" asChild>
@@ -173,10 +170,6 @@ const Leaderboard = () => {
           </div>
         </div>
       </main>
-      
-      <footer className="w-full py-4 border-t text-center text-sm text-muted-foreground">
-        <p>Créé pour le Projet Paradigmes de Programmation &copy; {new Date().getFullYear()}</p>
-      </footer>
     </div>
   );
 };
