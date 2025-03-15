@@ -1,0 +1,110 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size, 10), 1fr);
+    grid-template-rows: repeat(var(--grid-size, 10), 1fr);
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+  }
+
+  .game-cell {
+    @apply bg-muted rounded-sm transition-all duration-150;
+    aspect-ratio: 1/1;
+  }
+  
+  .game-cell.active {
+    @apply bg-primary animate-pulse-light;
+  }
+
+  .game-cell.target {
+    @apply bg-accent animate-bounce-light;
+  }
+
+  .game-cell.error {
+    @apply bg-destructive;
+  }
+
+  /* Console Mode Styling */
+  .console-container {
+    font-family: monospace;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 4px;
+    white-space: pre;
+    overflow: auto;
+    max-height: 600px;
+  }
+
+  .console-grid {
+    display: inline-block;
+    line-height: 1;
+  }
+
+  @keyframes page-transition {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .page-transition {
+    animation: page-transition 0.4s ease-out;
+  }
+}
