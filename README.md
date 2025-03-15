@@ -16,7 +16,7 @@ DevineLe Challenge est un jeu web interactif qui propose une expérience de devi
 ## Technologies Utilisées
 
 - React avec TypeScript
-- Tailwind CSS pour le styles
+- Tailwind CSS pour le style
 - Animations et transitions pour une expérience fluide
 - KaTeX pour le rendu des formules mathématiques
 
@@ -28,7 +28,25 @@ DevineLe Challenge est un jeu web interactif qui propose une expérience de devi
 
 ## Mode Console
 
-Pour une expérience alternative, tapez `console run` dans la console de commande sur la page d'accueil pour lancer le mode terminal.
+### Mode Console Web
+Pour une expérience alternative dans le navigateur, tapez `console run` dans la console de commande sur la page d'accueil pour lancer le mode terminal.
+
+### Mode Console Local
+Vous pouvez également jouer au jeu directement depuis votre terminal local en suivant ces étapes :
+
+1. Assurez-vous d'avoir Node.js installé sur votre machine
+2. Clonez ce dépôt : `git clone [URL_DU_REPO]`
+3. Installez les dépendances : `npm install` ou `yarn install`
+4. Lancez le jeu en mode console : `npm run console` ou `yarn console`
+
+Pour le mode console local, vous aurez besoin d'ajouter le script suivant dans votre package.json :
+```json
+"scripts": {
+  "console": "node ./scripts/console-game.js"
+}
+```
+
+Et créer un fichier simple `./scripts/console-game.js` qui lance une version Node.js du jeu.
 
 ## Diagramme UML des Classes
 
@@ -76,5 +94,13 @@ Pour une expérience alternative, tapez `console run` dans la console de command
 | handleCommand()  |
 +------------------+
 ```
+
+## Exports et Documents
+
+Le jeu permet d'exporter :
+- Les règles du jeu au format JSON, PDF ou LaTeX
+- Le tableau des scores au format JSON ou PDF
+
+---
 
 Profitez du jeu et que la chance soit avec vous !
