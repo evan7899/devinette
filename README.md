@@ -1,9 +1,7 @@
 
-# DevineLe Challenge
-
 ## À propos du Projet
 
-DevineLe Challenge est un jeu web interactif qui propose une expérience de devinette de nombres amusante et engageante. Ce projet a été développé avec des technologies modernes pour offrir une interface utilisateur fluide et responsive.
+c'est pas trop beaucoup super facile React monsieur, mais j'ai le latex en cuire alors ça va !
 
 ## Fonctionnalités Principales
 
@@ -11,13 +9,11 @@ DevineLe Challenge est un jeu web interactif qui propose une expérience de devi
 - **Deux Modes de Jeu** - Interface graphique classique ou mode console avec commandes textuelles
 - **Système de Classement** - Enregistrez vos scores et comparez-les avec d'autres joueurs
 - **Design Responsive** - Fonctionne parfaitement sur tous les appareils, des téléphones aux ordinateurs
-- **Effets Sonores et Visuels** - Une expérience immersive avec animations et feedback visuel
 
 ## Technologies Utilisées
 
 - React avec TypeScript
 - Tailwind CSS pour le style
-- Animations et transitions pour une expérience fluide
 - KaTeX pour le rendu des formules mathématiques
 
 ## Comment Utiliser
