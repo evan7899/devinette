@@ -29,8 +29,6 @@ const Rules = () => {
       <header className="w-full py-4 px-6 border-b glass">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <h1 className="text-2xl font-bold text-foreground">DevineLe</h1>
-            <span className="inline-flex items-center rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary">Challenge</span>
           </div>
           <nav className="flex items-center space-x-4">
             <Button variant="ghost" size="sm" asChild>
@@ -97,19 +95,6 @@ const Rules = () => {
           
           <div className="bg-secondary/40 p-4 rounded-md text-center mb-6">
             <BlockMath math={`\\boxed{\\begin{array}{c}\\textbf{Un jeu de devinette de nombre} \\\\\\text{Simple et amusant} \\\\\\end{array}}`} />
-          </div>
-
-          {/* Meme humoristique */}
-          <div className="bg-accent/20 p-4 rounded-md text-center mb-6">
-            <div className="max-w-md mx-auto">
-              <h4 className="text-lg font-semibold mb-2">Quand tu essaies de deviner le nombre pour la 9ème fois...</h4>
-              <div className="relative bg-card rounded-lg p-4 shadow-md mb-2">
-                <div className="text-2xl font-bold mb-2">Moi: C'est 42?</div>
-                <div className="text-xl">Le jeu: Non, c'est plus petit.</div>
-                <div className="text-xl">Moi: 🤦‍♂️</div>
-              </div>
-              <p className="text-sm text-muted-foreground">*Ce sentiment quand tu te rappelles que tous les nombres sont entre 1 et 100*</p>
-            </div>
           </div>
           
           <h3 className="text-2xl font-bold mb-4">Règles du Jeu</h3>
